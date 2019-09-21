@@ -13,6 +13,16 @@
 <body>
 
 <h2><% out.print("JSP says hello");%></h2>
+<p>Dziej jest:
+    <% out.println(java.time.LocalDate.now().toString());%>
+</p>
+
+<h3>2 + 2 wynik expression:  <%= 2 + 2%>
+</h3>
+
+<%! private long visitCount = 0; %>
+
+<h2>Ilosc odwiedzin strony : <%= ++ visitCount %></h2>
 
 </body>
 </html>

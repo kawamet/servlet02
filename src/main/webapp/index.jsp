@@ -31,6 +31,12 @@ Z parametrem<br>
 <h2>Servlet 4: JSP</h2>
 <a href="/servlet02_war/jsp">Przekierowanie z servletu</a><br>
 <a href="/servlet02_war/JspHelloWorls.jsp">Strona JSP</a>
+<hr>
+<h2>Servlet 5: Get and Post</h2>
+<a href="/servlet02_war/getServlet">Get</a><br>
+<a href="/servlet02_war/getPost.html">HTML</a><br>
+<a href="/servlet02_war/postServlet">Post</a><br>
+
 
 </body>
 </html>
