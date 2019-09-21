@@ -15,6 +15,19 @@
 
 </form>
 <hr>
+<h2>Servlet 2: Redirects</h2>
+<a href="/servlet02_war/clientRedirect">Po stronie klienta</a><br>
+<a href="/servlet02_war/serverRedirect">Po stronie servera</a><br>
+<hr>
+<h2>Servlet 3: Filter</h2>
+<a href="/servlet02_war/filter">Domyslanie bez parametrow</a><br>
+Z parametrem<br>
+<form action="/servlet02_war/filter" method="get">
+    Uzytkownik
+    <input type="text" name="user"><br>
+    <input type="submit" value="Wyslij">
+</form>
+<hr>
 
 
 </body>
