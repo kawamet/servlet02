@@ -28,7 +28,9 @@ Z parametrem<br>
     <input type="submit" value="Wyslij">
 </form>
 <hr>
-
+<h2>Servlet 4: JSP</h2>
+<a href="/servlet02_war/jsp">Przekierowanie z servletu</a><br>
+<a href="/servlet02_war/JspHelloWorls.jsp">Strona JSP</a>
 
 </body>
 </html>

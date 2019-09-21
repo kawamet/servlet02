@@ -10,7 +10,7 @@ import java.util.Map;
 public class HelloFilter implements Filter {
 
 
-    public static final String USER = "user" ;
+    public static final String USER = "user";
     //bo tylko jedna kasa
     private static final String UNKNOWN_USER_NAME = "unknown";
 
@@ -21,23 +21,23 @@ public class HelloFilter implements Filter {
         servletResponse.setCharacterEncoding("UFF-8");
         servletResponse.setContentType("text/html");
         Map<String, String[]> parameterMap = servletRequest.getParameterMap();
-        if (parameterMap.containsKey(USER)){
+        if (parameterMap.containsKey(USER)) {
             servletRequest.setAttribute(USER, parameterMap.get(USER)[0]);
-        }else {
+        } else {
             servletRequest.setAttribute(USER, UNKNOWN_USER_NAME);
         }
 
 
         //servlet execution
-        filterChain.doFilter(servletRequest,servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
 
 
         //todo after
         PrintWriter writer = servletResponse.getWriter();
         String userName = (String) servletRequest.getAttribute(USER);
-        if (userName.matches(".+a")){
+        if (userName.matches(".+a")) {
             writer.println("<br><h1>Jestes kobieta</h1><br>");
-        }else {
+        } else {
             writer.println("<br><h1>Jestes facetem</h1><br>");
         }
 
